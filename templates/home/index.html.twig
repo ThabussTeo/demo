@@ -1,0 +1,101 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portfolio THABUSSOT Téo{% endblock %}
+
+{% block body %}
+    <header class="header center">
+        <h3><a href="#" class="link">TT.</a></h3>
+        <nav class="nav center">
+            <ul class="nav__list center">
+                <li class="nav__list-item">
+                    <a class="link link--nav" href="#projets">projets</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="link link--nav" href="#competences">compétences</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="link link--nav" href="#parcours">parcours</a>
+                </li>
+            </ul>
+            <button type="button" aria-label="toggle theme" class="btn btn--icon"><i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i></button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="about center">
+            <h1>Bonjour, je suis <span class="about__name">Téo Thabussot</span></h1>
+            <h2 class="about__role">Un développeur Backend</h2>
+            <p class="about__desc">Actuellement étudiant en Brevet De Technicien Supérieur avec la spécialité Services Informatiques aux Organisations, je suis un développeur Backend. Vous pourrez trouver sur ce portfolio toutes les informations sur mes compétences, mon parcours et quelques aspects de ma vie.</p>
+            <div class="about__contact center">
+                <a href="https://example.com"><span class="btn btn--outline">Mon CV</span></a>
+                <a href="https://github.com" aria-label="github" class="link link--icon"><i aria-hidden="true" class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/"aria-label="linkedin"class="link link--icon"><i aria-hidden="true" class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <section id="projets" class="section projects">
+            <h2 class="section__title">Projects</h2>
+            <div class="projects__grid">
+                <div class="project">
+                    <h3>Projet 1</h3>
+                    <p class="project__description">Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo sapiente debitis labore sed ipsam Mollitia repellat illum quod unde beatae Quis</p>
+                    <ul class="project__stack">
+                        <li class="project__stack-item">Python</li>
+                        <li class="project__stack-item">Flask</li>
+                        <li class="project__stack-item">HTML</li>
+                    </ul>
+                    <a href="https://github.com" aria-label="source code" class="link link--icon"><i aria-hidden="true" class="fab fa-github"></i></a>
+                    <a href="https://example.com" aria-label="live preview" class="link link--icon"><i aria-hidden="true" class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project">
+                    <h3>Projet 2</h3>
+                    <p class="project__description">Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo sapiente debitis labore sed ipsam Mollitia repellat illum quod unde beatae Quis</p>
+                    <ul class="project__stack">
+                        <li class="project__stack-item">Python</li>
+                        <li class="project__stack-item">Flask</li>
+                        <li class="project__stack-item">HTML</li>
+                    </ul>
+                    <a href="https://github.com" aria-label="source code" class="link link--icon"><i aria-hidden="true" class="fab fa-github"></i></a>
+                    <a href="https://example.com" aria-label="live preview" class="link link--icon"><i aria-hidden="true" class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project">
+                    <h3>Projet 3</h3>
+                    <p class="project__description">Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo sapiente debitis labore sed ipsam Mollitia repellat illum quod unde beatae Quis</p>
+                    <ul class="project__stack">
+                        <li class="project__stack-item">Python</li>
+                        <li class="project__stack-item">Flask</li>
+                        <li class="project__stack-item">HTML</li>
+                    </ul>
+                    <a href="https://github.com" aria-label="source code" class="link link--icon"><i aria-hidden="true" class="fab fa-github"></i></a>
+                    <a href="https://example.com" aria-label="live preview" class="link link--icon"><i aria-hidden="true" class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section skills" id="competences">
+            <h2 class="section__title">Skills</h2>
+            <ul class="skills__list">
+                <li class="skills__list-item btn btn--plain">HTML</li>
+                <li class="skills__list-item btn btn--plain">Boostrap</li>
+                <li class="skills__list-item btn btn--plain">CSS</li>
+                <li class="skills__list-item btn btn--plain">PHP</li>
+                <li class="skills__list-item btn btn--plain">Symfony</li>
+                <li class="skills__list-item btn btn--plain">Python</li>
+                <li class="skills__list-item btn btn--plain">Flask</li>
+                <li class="skills__list-item btn btn--plain">Javascript</li>
+                <li class="skills__list-item btn btn--plain">React</li>
+                <li class="skills__list-item btn btn--plain">Git</li>
+            </ul>
+        </section>
+
+    </main>
+
+
+
+
+
+    <footer class="footer">
+        <a href="#" class="link footer__link">Fait par THABUSSOT Téo avec le ❤️</a>
+    </footer>
+
+{% endblock %}

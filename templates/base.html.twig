@@ -12,8 +12,17 @@
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
+
+        <link rel="stylesheet" href="/index.css">
+
+
     </head>
-    <body>
+    <body class="dark">
         {% block body %}{% endblock %}
+
+
+        <script src="/fichier1.js"></script>
+        <script src="/fichier2.js"></script>
+
     </body>
 </html>
